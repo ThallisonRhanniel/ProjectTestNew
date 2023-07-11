@@ -5,6 +5,7 @@ import CatFullName from './src/common/components/ShowCatName/Index';
 import Cat from './src/common/components/ShowTitleAndInput/Index';
 import CatApp from './src/common/components/ShowCatImage/Index';
 import Cafe from './src/common/components/FoodCat/Index';
+import PizzaTranslator from './src/common/components/PizzaTranslator/Index';
 
 
 const Cat2 = () => {
@@ -21,8 +22,7 @@ export default function App() {
     <View style={styles.container}>
       <StatusBar style="auto" />
       <Text>Some text</Text>
-      <Cafe></Cafe>
-      
+      <PizzaTranslator></PizzaTranslator>
     </View>
     
   );
