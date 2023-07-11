@@ -1,0 +1,8 @@
+--Criar App com expo
+npx create-expo-app --template
+--Iniciar App
+//npm install -g expo-cli -- DEPRECIADO
+npx expo start
+
+
+npx expo-doctor  
