@@ -6,23 +6,17 @@ import Cat from './src/common/components/ShowTitleAndInput/Index';
 import CatApp from './src/common/components/ShowCatImage/Index';
 import Cafe from './src/common/components/FoodCat/Index';
 import PizzaTranslator from './src/common/components/PizzaTranslator/Index';
-
-
-const Cat2 = () => {
-  return (
-    <View>
-      <Text>I am also a cat!</Text>
-    </View>
-  );
-};
+import SuperScrollView from './src/common/components/SuperScrollView/Index';
+import SuperBasicFlatList from './src/common/components/SuperBasicFlatList';
 
 
 export default function App() {
   return (
     <View style={styles.container}>
       <StatusBar style="auto" />
-      <Text>Some text</Text>
-      <PizzaTranslator></PizzaTranslator>
+      <SuperBasicFlatList></SuperBasicFlatList>
+      
+    
     </View>
     
   );
