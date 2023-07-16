@@ -6,3 +6,21 @@ npx expo start
 
 
 npx expo-doctor  
+
+
+//Comandos Editor
+//COpiar uma linha
+Shift Alt Seta 
+Shift Option Setaß
+
+//MoverLinha
+Alt + Seta
+Option + seta
+
+//Apagar uma linha
+Ctrl Shift K
+COmmand Shift K
+
+//Editar N linhas\
+alt + click
+Option + CLick

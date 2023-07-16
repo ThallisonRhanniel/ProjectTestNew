@@ -8,15 +8,17 @@ import Cafe from './src/common/components/FoodCat/Index';
 import PizzaTranslator from './src/common/components/PizzaTranslator/Index';
 import SuperScrollView from './src/common/components/SuperScrollView/Index';
 import SuperBasicFlatList from './src/common/components/SuperBasicFlatList';
+import DirectionFlexBox from './src/common/components/SuperFlexBox/DirectionFlexBox/Index';
+import JustifyFlexBox from './src/common/components/SuperFlexBox/JustifyFlexBox/Index';
+import SuperImageView from './src/common/components/SuperImagens/Index';
 
 
 export default function App() {
   return (
     <View style={styles.container}>
       <StatusBar style="auto" />
-      <SuperBasicFlatList></SuperBasicFlatList>
-      
-    
+      <Cat></Cat>
+      <SuperImageView></SuperImageView>
     </View>
     
   );
