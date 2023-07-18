@@ -11,6 +11,8 @@ import SuperBasicFlatList from './src/common/components/SuperBasicFlatList';
 import DirectionFlexBox from './src/common/components/SuperFlexBox/DirectionFlexBox/Index';
 import JustifyFlexBox from './src/common/components/SuperFlexBox/JustifyFlexBox/Index';
 import SuperImageView from './src/common/components/SuperImagens/Index';
+import ButtonBasics from './src/common/components/ButtonBasics/Index';
+import Touchables from './src/common/components/ButtonTouchables/Index';
 
 
 export default function App() {
@@ -18,7 +20,10 @@ export default function App() {
     <View style={styles.container}>
       <StatusBar style="auto" />
       <Cat></Cat>
-      <SuperImageView></SuperImageView>
+      {/* <ButtonBasics></ButtonBasics> */}
+      <Touchables></Touchables>
+      {/* <SuperImageView></SuperImageView> */}
+      {/* <SuperBasicFlatList></SuperBasicFlatList> */}
     </View>
     
   );
