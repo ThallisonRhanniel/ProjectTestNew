@@ -1,19 +1,20 @@
 
 import * as React from 'react';
-import { NavigationContainer } from '@react-navigation/native'
-import { createStackNavigator } from '@react-navigation/native-stack'
+import { Button,Text }  from 'react-native';
+import { NavigationContainer } from '@react-navigation/native';
+import {createNativeStackNavigator} from '@react-navigation/native-stack';
 
-// import { IndexScreen } from './screens/index.screen'
-// import { DetailsScreen } from './screens/details.screen'
-
-const { Navigator, Screen } = createStackNavigator()
+console.log("hei");
+console.log(`teste ${createNativeStackNavigator}`);
+const { Navigator, Screen } = createNativeStackNavigator();
 
 const HomeNavigator = () => (
-    <Navigator headerMode='none'>
+    <Navigator>
         <Screen name='Home' component={HomeScreen}/>
         <Screen name='Profile' component={ProfileScreen}/>
     </Navigator>
 )
+
 
 export const AppNavigator = () => (
     <NavigationContainer>
@@ -22,7 +23,7 @@ export const AppNavigator = () => (
 )
 
 
-const HomeScreen = ({navigation}) => {
+const HomeScreen = ({navigation}:any) => {
     return (
       <Button
         title="Go to Jane's profile"
@@ -33,6 +34,6 @@ const HomeScreen = ({navigation}) => {
     );
 };
 
-const ProfileScreen = ({navigation, route}) => {
+const ProfileScreen = ({navigation, route}:any) => {
     return <Text>This is {route.params.name}'s profile</Text>;
 };
