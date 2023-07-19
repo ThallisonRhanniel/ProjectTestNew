@@ -26,17 +26,6 @@ export default function App() {
 
     <AppNavigator></AppNavigator>
 
-    // <NavigationContainer>
-    //   <Stack.Navigator>
-    //     <Stack.Screen
-    //       name="Home"
-    //       component={HomeScreen}
-    //       options={{title: 'Welcomes'}}
-    //     />
-    //     <Stack.Screen name="Profile" component={ProfileScreen} />
-    //   </Stack.Navigator>
-    // </NavigationContainer>
-
     // <View style={styles.container}>
     //   <StatusBar style="auto" />
     //   <Cat></Cat>
@@ -58,20 +47,3 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
 });
-
-
-const HomeScreen = ({navigation}:any) => {
-  return (
-    <Button
-      title="Go to Jane's profile"
-      onPress={() =>
-        navigation.navigate('Profile', {name: 'Jane'})
-      }
-    />
-  );
-};
-const ProfileScreen = ({navigation, route}: any) => {
-  return <Text>This is {route.params.name}'s profile</Text>;
-};
-
-
