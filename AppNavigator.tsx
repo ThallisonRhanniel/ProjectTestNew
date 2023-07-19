@@ -8,8 +8,8 @@ const { Navigator, Screen } = createNativeStackNavigator();
 
 const HomeNavigator = () => (
     <Navigator>
-        <Screen name='Home' component={HomeScreen} options={{title: "Pagina 1"}} />
-        <Screen name='Profile' component={ProfileScreen} options={{title: "Pagina 2"}}/>
+        <Screen name='Home' component={HomeScreen} options={{title: "Tela Inicial"}} />
+        <Screen name='Profile' component={ProfileScreen} options={{title: "Tela de Perfil"}}/>
     </Navigator>
 )
 
