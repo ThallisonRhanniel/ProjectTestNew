@@ -64,7 +64,7 @@ export default class Touchables extends Component {
         <TouchableOpacity onPress={this._onPressButton}>
             <View style={styles.button}>
                 <Image source={{uri: 'https://reactjs.org/logo-og.png', cache: 'only-if-cached', }}
-       style={{width: 50, height: 50}} />
+                style={{width: 50, height: 50}} />
             </View>            
         </TouchableOpacity>
       </View>

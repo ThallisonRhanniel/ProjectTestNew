@@ -24,7 +24,7 @@ const SuperImageView = () => (
         <Image source={require('../../../img/sword.png')} 
         style={{width: 389, height: 400 }} />       
         <Image source={{uri: 'https://reactjs.org/logo-og.png', cache: 'only-if-cached', }}
-       style={{width: 389, height: 400}} />
+        style={{width: 389, height: 400}} />
     </ScrollView>     
     
     
