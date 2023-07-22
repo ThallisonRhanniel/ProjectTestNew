@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
-import {Alert, Button, StyleSheet, View} from 'react-native';
-
+import {Alert, Button, View} from 'react-native';
+import styles   from "./styles";
 export default class ButtonBasics extends Component {
   _onPressButton() {    Alert.alert('You tapped the button!');  }
 
@@ -25,18 +25,3 @@ export default class ButtonBasics extends Component {
     );
   }
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-  },
-  buttonContainer: {
-    margin: 20,
-  },
-  alternativeLayoutButtonContainer: {
-    margin: 20,
-    flexDirection: 'row',
-    justifyContent: 'space-between',
-  },
-});
