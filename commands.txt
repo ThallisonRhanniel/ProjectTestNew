@@ -24,3 +24,6 @@ COmmand Shift K
 //Editar N linhas\
 alt + click
 Option + CLick
+
+//executar o commando do Package.json
+npm run start 
