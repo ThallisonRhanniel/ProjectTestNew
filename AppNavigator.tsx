@@ -1,18 +1,23 @@
 
 import * as React from 'react';
-import { Button,Text }  from 'react-native';
+import { Button,Text,StatusBar, NativeModules }  from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import Cat from './src/common/components/ShowTitleAndInput/Index';
-import { StatusBar } from 'react-native';
 
 const { Navigator, Screen } = createNativeStackNavigator();
+
+const {CalendarModule} = NativeModules;
 
 const HomeNavigator = () => (
     <Navigator>
         <Screen name='Home' component={HomeScreen} options={{title: "Tela Inicial", headerRight: () => (
+          
             <Button
-              onPress={() => alert('This is a button!')}
+              onPress={() => 
+                // alert('This is a button!')
+                CalendarModule.createCalendarEvent('testName', 'testLocation')
+              }
               title="Info"
               color="#803434"
             />
