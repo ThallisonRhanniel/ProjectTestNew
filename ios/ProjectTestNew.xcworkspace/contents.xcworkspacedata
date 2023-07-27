@@ -2,6 +2,12 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:/Users/thallisonrhannielgarcialima/Project/ProjectTestNew/ios/RCTCalendarModule.m">
+   </FileRef>
+   <FileRef
+      location = "group:/Users/thallisonrhannielgarcialima/Project/ProjectTestNew/ios/RCTCalendarModule.h">
+   </FileRef>
+   <FileRef
       location = "group:ProjectTestNew.xcodeproj">
    </FileRef>
    <FileRef

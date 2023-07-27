@@ -1,13 +1,12 @@
 
 import * as React from 'react';
-import { Button,Text,StatusBar, NativeModules }  from 'react-native';
+import { Button,Text,StatusBar }  from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import Cat from './src/common/components/ShowTitleAndInput/Index';
+import CalendarModule from './src/platformNative/CalendarModule';
 
 const { Navigator, Screen } = createNativeStackNavigator();
-
-const {CalendarModule} = NativeModules;
 
 const HomeNavigator = () => (
     <Navigator>
@@ -15,11 +14,12 @@ const HomeNavigator = () => (
           
             <Button
               onPress={() => 
-                // alert('This is a button!')
-                CalendarModule.createCalendarEvent('testName', 'testLocation')
+                // alert('This is a button!')      
+                          
+                CalendarModule.createCalendarEvent('foo', 'bar')
               }
               title="Info"
-              color="#803434"
+              color="#050435"
             />
           ),}} />
         <Screen name='Profile' component={ProfileScreen} options={{title: "Tela de Perfil"}}/>
@@ -37,7 +37,7 @@ export const AppNavigator = () => (
 const HomeScreen = ({navigation}:any) => {
     return (
       <>
-        <StatusBar barStyle="dark-content" backgroundColor="#d51616" />
+        <StatusBar barStyle="dark-content" backgroundColor="#1d0000" />
         <Cat></Cat>
         <Button
         title="Go to Jane's profile"
@@ -54,7 +54,7 @@ const ProfileScreen = ({navigation, route}:any) => {
   console.log("navigation:route", navigation);
   return (
     <>
-      <StatusBar barStyle="light-content" backgroundColor="#d51616" />  
+      <StatusBar barStyle="light-content" backgroundColor="#3f1129" />  
       <Text>This is {route.params.name}'s profile</Text>
     </>
   );
