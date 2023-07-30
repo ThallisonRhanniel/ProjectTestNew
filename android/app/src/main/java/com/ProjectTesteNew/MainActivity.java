@@ -1,5 +1,6 @@
 package com.ProjectTesteNew;
 
+import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
 
@@ -17,7 +18,20 @@ public class MainActivity extends ReactActivity {
     // coloring the background, status bar, and navigation bar.
     // This is required for expo-splash-screen.
     setTheme(R.style.AppTheme);
+
+    IniciarServicos();
     super.onCreate(null);
+  }
+
+  private void IniciarServicos()
+  {
+    Intent service = new Intent(getApplicationContext(), MyTaskService.class);
+    Bundle bundle = new Bundle();
+
+    bundle.putString("foo", "bar");
+    service.putExtras(bundle);
+
+    getApplicationContext().startService(service);
   }
 
   /**
