@@ -27,3 +27,9 @@ Option + CLick
 
 //executar o commando do Package.json
 npm run start 
+
+
+
+///Gerar apk android
+
+npm install -g eas-cli
